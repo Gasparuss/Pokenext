@@ -44,3 +44,10 @@ yarn install
 yarn start
 
 ```
+
+## Live 🎆
+
+https://pokenext-inky.vercel.app/
+
+
+
