@@ -41,7 +41,7 @@ export const Bio = memo<BioProps>(({ pokemonData, pokemonSpeciesData }) => {
         <FlexBetween
           category="Abilities"
           details={
-            <div className="flex flex-col items-start">
+            <div>
               {pokemonData.abilities.map((ability) => (
                 <p key={ability.ability.name}>
                   {ability.ability.name
