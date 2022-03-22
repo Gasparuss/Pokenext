@@ -19,6 +19,20 @@ Pokedex where you can discover different types of Pokemon and learn interesting 
 | [ESLint](https://eslint.org/)                             | TypeScript linting                                                  |
 | [Prettier](https://prettier.io/)                          | Code formatter                                                      |
 
+## Screenshots 📺
+
+### Dark theme
+
+<p align="center">
+	<img src="https://i.ibb.co/Cn2Sd4n/1.png" />
+</p>
+
+### Light theme
+
+<p align="center">
+	<img src="https://i.ibb.co/GVpMHh5/2.png" />
+</p>
+
 ## Installation 💿
 
 ```bash
