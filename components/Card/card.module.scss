@@ -1,0 +1,42 @@
+@use "styles/_mixins";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.4rem;
+  width: 100%;
+  max-width: 60rem;
+  @include mixins.flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .card {
+    height: 250px;
+    width: 200px;
+    background-color: var(--white-100);
+    color: var(--black-100);
+    border-radius: 4%;
+    @include mixins.flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    li {
+      list-style: none;
+    }
+
+    .info {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      border: none;
+      background-color: var(--white-100);
+
+      .icon {
+        color: var(--black-100);
+        cursor: pointer;
+      }
+    }
+  }
+}

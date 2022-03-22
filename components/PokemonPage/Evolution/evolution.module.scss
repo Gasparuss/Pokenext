@@ -1,0 +1,26 @@
+@use "styles/_mixins";
+
+.evolution {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--black-100);
+  margin-top: 30px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+      @include mixins.flex;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      cursor: pointer;
+    }
+  }
+
+  .capitalize {
+    text-transform: capitalize;
+  }
+}

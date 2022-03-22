@@ -1,0 +1,9 @@
+.flexWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+}

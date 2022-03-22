@@ -1,0 +1,46 @@
+@use "styles/_mixins";
+
+.wrapper {
+  padding: 10px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .selectWrapper {
+    position: relative;
+    color: var(--black-100);
+    cursor: pointer;
+
+    &:focus-within,
+    &:hover {
+      color: var(--gray-200);
+    }
+
+    select,
+    input {
+      appearance: none;
+      font-family: inherit;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 0.75rem;
+      padding: 5px 10px 5px 20px;
+      color: inherit;
+      max-width: 180px;
+    }
+
+    svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+}

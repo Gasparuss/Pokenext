@@ -1,0 +1,23 @@
+.bio {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: var(--black-100);
+
+  .text {
+    margin-top: 40px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  .flavor {
+    white-space: pre-wrap;
+    font-family: Montserrat, cursive;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use "styles/_mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding: 25px;
+  margin-bottom: 30px;
+
+  .img {
+    @include mixins.flex;
+    padding: 15px;
+    width: 80%;
+    h2 {
+      color: var(--black-100);
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    height: 100%;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.button {
+  width: 80px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--gray-100);
+  cursor: pointer;
+  border: none;
+  color: var(--black-100);
+
+  &:hover {
+    background: black;
+    color: #fff;
+  }
+}
